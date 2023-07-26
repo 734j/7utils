@@ -21,7 +21,7 @@ if (file == NULL) {
 char buffer[BUF_SZ];
 size_t bytes_read;
 while ((bytes_read = fread(buffer, 1, BUF_SZ, file)) > 0) {
-    fwrite(buffer, 1, bytesRead, stdout);
+    fwrite(buffer, 1, bytes_read, stdout);
 }
 
 fclose(file);
