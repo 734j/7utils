@@ -9,7 +9,6 @@ if (argc < 2 || argc > 2) {
     return EXIT_FAILURE;
 }
 
-int c;
 FILE *file;
 file = fopen(argv[1],"rb");
 
