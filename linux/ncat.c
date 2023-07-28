@@ -4,7 +4,7 @@
 
 int main (int argc, char *argv[]) {
 
-if (argc < 2 || argc > 2) {
+if (argc != 2) {
     fprintf(stderr, "%s: Please provide 1 file.\n", argv[0]);
     return EXIT_FAILURE;
 }
