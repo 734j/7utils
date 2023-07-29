@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#define BUF_SZ 2048
+#include "7utils.h"
 
 int main (int argc, char *argv[]) {
 
@@ -17,9 +17,9 @@ if (file == NULL) {
     return EXIT_FAILURE;
 }
 
-char buffer[BUF_SZ];
+char buffer[BUF_SZ_2];
 size_t bytes_read;
-while ((bytes_read = fread(buffer, 1, BUF_SZ, file)) > 0) {
+while ((bytes_read = fread(buffer, 1, BUF_SZ_2, file)) > 0) {
     fwrite(buffer, 1, bytes_read, stdout);
 }
 
