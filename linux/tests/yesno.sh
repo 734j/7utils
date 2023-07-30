@@ -3,11 +3,11 @@
 ./choice
 key=$(echo $?)
 
-if [ $key == 89 ];
+if [ $key == 0 ];
 then
 echo "Yes!"
 fi
-if [ $key == 78 ];
+if [ $key == 1 ];
 then
 echo "No!"
 fi 

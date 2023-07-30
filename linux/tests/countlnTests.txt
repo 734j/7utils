@@ -1,0 +1,42 @@
+
+[ (1)
+
+    Run countln and provide no file.
+
+    Expected result: Expected result: The program prints out that it needs 1 file and stops. Return code: 1
+]
+
+[ (2)
+
+    Run countln and provide a file that does not exist.
+
+    Expected result: The program complains that the file can not be opened. Return code: 1
+]
+
+[ (3)
+
+    Run countln and provide the file: test1.txt
+
+    Expected result: The program prints out that it counted 3 lines. Return code: 0
+]
+
+[ (4)
+
+    Run countln and provide the file: test2.txt
+
+    Expected result: The program prints out that it counted 3 lines. Return code: 0
+]
+
+[ (5)
+
+    Run countln and provide the file: test1.txt and test2.txt 
+
+    Expected result: The program prints out that it needs 1 file and stops. Return code: 1
+]
+
+[ (6)
+
+    Run countln and provide the file: test3.txt 
+    
+    Expected result: The program complains that the file can not be opened. Return code: 1
+]

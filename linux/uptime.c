@@ -6,9 +6,9 @@ int main () {
 
 struct sysinfo sys_info;
 
-int info = sysinfo(&sys_info);
+sysinfo(&sys_info);
 
-printf("Uptime: %d minutes.\n", sys_info.uptime / 60);
+printf("Uptime: %ld minutes.\n", sys_info.uptime / 60);
 
 
 return EXIT_SUCCESS;
