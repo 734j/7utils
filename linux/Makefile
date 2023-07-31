@@ -2,17 +2,17 @@
 all: choice confirm countln ncat uptime
 
 choice:
-	gcc -Wall -Werror -g choice.c functions.c -o choice
+	gcc -Wfatal-errors -Wall -Werror -Wextra -g choice.c functions.c -o choice
 
 confirm:
-	gcc -Wall -Werror -g confirm.c functions.c -o confirm
+	gcc -Wfatal-errors -Wall -Werror -Wextra -g confirm.c functions.c -o confirm
 
 countln:
-	gcc -Wall -Werror -g countln.c functions.c 7utils.h -o countln
+	gcc -Wfatal-errors -Wall -Werror -Wextra -g countln.c functions.c 7utils.h -o countln
 
 ncat:
-	gcc -Wall -Werror -g ncat.c 7utils.h -o ncat
+	gcc -Wfatal-errors -Wall -Werror -Wextra -g ncat.c 7utils.h -o ncat
 
 uptime:
-	gcc -Wall -Werror -g uptime.c -o uptime
+	gcc -Wfatal-errors -Wall -Werror -Wextra -g uptime.c -o uptime
 

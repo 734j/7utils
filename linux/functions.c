@@ -66,7 +66,7 @@ int COUNT_LINES_IN_FILE (char filename[], size_t *lines) {
     char buffer[BUF_SZ_4]; // Creates buffer with size of BUF_SZ_4
     while (1) {
         size_t bytes_read = fread(buffer, 1, BUF_SZ_4, file); // puts chars from file in to buffer and returns the amount of bytes.
-        for (int i = 0 ; i < bytes_read; i++) { 
+        for (size_t i = 0 ; i < bytes_read; i++) { 
             if (buffer[i] == '\n') { // Searches through the buffer for newlines.
                 count++;
             } 
@@ -96,7 +96,7 @@ int COUNT_LINES_IN_FILE_POSIX (char filename[], size_t *lines) {
     char buffer[BUF_SZ_4]; // Creates buffer with size of BUF_SZ_4
     while (1) {
         size_t bytes_read = fread(buffer, 1, BUF_SZ_4, file); // puts chars from file in to buffer and returns the amount of bytes.
-        for (int i = 0 ; i < bytes_read; i++) { 
+        for (size_t i = 0 ; i < bytes_read; i++) { 
             if (buffer[i] == '\n') { // Searches through the buffer for newlines.
                 count++;
             } 
